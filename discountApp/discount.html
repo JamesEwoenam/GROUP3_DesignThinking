@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="discount.css">
+    <title>Discount Calculator</title>
+
+</head>
+
+<body>
+    <div class="content">
+        <h1>Discount Calculator</h1>
+
+        <table id="itemTable">
+            <tr>
+                <th>Item</th>
+                <th>Unit Price (Cedis)</th>
+                <th>Quantity</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>Oil</td>
+                <td>100</td>
+                <td><input type="number" id="quantity1" min="0" value="0"></td>
+                <td id="amount1">0</td>
+            </tr>
+            <tr>
+                <td> Rice</td>
+                <td>150</td>
+                <td><input type="number" id="quantity2" min="0" value="0"></td>
+                <td id="amount2">0</td>
+            </tr>
+            <tr>
+                <td>Soap</td>
+                <td>10</td>
+                <td><input type="number" id="quantity3" min="0" value="0"></td>
+                <td id="amount3">0</td>
+            </tr>
+            <!-- Add more items as needed -->
+        </table>
+        <div class="totals">
+            <p>Total Cost: <span id="totalCost">0</span> Cedis</p>
+            <p>Discounted Amount: <span id="total">0</span> Cedis</p>
+            <p>Discount Applied: <span id="discount">0%</span></p>
+        </div>
+
+    </div>
+
+
+    <script src="index.js">
+
+    </script>
+</body>
+
+</html>

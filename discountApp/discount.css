@@ -1,0 +1,44 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+#total {
+    font-weight: bold;
+}
+
+.totals {
+    display: flex;
+    column-gap: 6rem;
+    background-color: rgb(230, 229, 229);
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.totals span {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}

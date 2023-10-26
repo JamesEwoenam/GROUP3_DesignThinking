@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.form {
+    border: 5px
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 15rem;
+    height: 2rem;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.sex {
+    margin: 30px 0;
+}
+
+
+
+
+
+input[type="radio"] {
+    margin: 5px;
+}
+
+.age {
+    margin: 30px 0;
+}
+
+.age p {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.age input {
+    margin-left: 30px;
+}
+
+
+.blood {
+    margin: 30px;
+
+}
+
+.blood p {
+    margin: 0;
+}
+
+.blood input {
+    margin-left: 30px;
+}
+
+button {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0055aa;
+}
+
+#result {
+    width: 50%;
+    display: block;
+    font-weight: bold;
+    margin: auto;
+    border-radius: .5rem;
+    padding: 10px;
+
+}

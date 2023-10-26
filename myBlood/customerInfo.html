@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>User Information</h1>
+    <div class="form">
+        <label for="name">Enter Name:</label>
+        <input type="text" id="name">
+
+        <div class="sex">
+            <span>Sex:</span>
+            <input style="margin-left: 30px;" type="radio" name="sex" value="Male" id="male">
+            <label for="male">Male</label>
+            <input style="margin-left: 30px;" type="radio" name="sex" value="Female" id="female">
+            <label for="female">Female</label>
+
+        </div>
+
+        <div class="age">
+            <p>Age:</p>
+            <input type="radio" name="age" value="0-18" id="age0-18">
+            <label for="age0-18">0-18</label>
+            <input type="radio" name="age" value="19-35" id="age19-35">
+            <label for="age19-35">19-35</label>
+            <input type="radio" name="age" value="36-60" id="age36-60">
+            <label for="age36-60">36-60</label>
+            <input type="radio" name="age" value="61+" id="age61+">
+            <label for="age61+">61+</label>
+        </div>
+
+
+        <div class="blood">
+            <span>Blood Group:</span>
+            <input type="radio" name="blood-group" value="A" id="bloodA">
+            <label for="bloodA">A</label>
+            <input type="radio" name="blood-group" value="B" id="bloodB">
+            <label for="bloodB">B</label>
+            <input type="radio" name="blood-group" value="AB" id="bloodAB">
+            <label for="bloodAB">AB</label>
+            <input type="radio" name="blood-group" value="O" id="bloodO">
+            <label for="bloodO">O</label>
+        </div>
+
+        <br>
+        <button onclick="showResult()">Show Result</button>
+        <textarea name="result" id="result"></textarea>
+    </div>
+    <script>
+        function showResult() {
+            const name = document.getElementById("name").value;
+            const sex = document.querySelector('input[name="sex"]:checked').value;
+            const age = document.querySelector('input[name="age"]:checked').value;
+            const bloodGroup = document.querySelector('input[name="blood-group"]:checked').value;
+
+            const result = `${name} is ${sex}, between the ages of ${age}, and has a blood group of ${bloodGroup}`;
+            document.getElementById("result").textContent = result;
+        }
+    </script>
+</body>
+
+</html>
